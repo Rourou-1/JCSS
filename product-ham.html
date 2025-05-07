@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Ham - Premium Processed Meats | JCL Production</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="product-styles.css">
+    <link rel="stylesheet" href="product-chicken-siomai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <img src="Img/logo.jpg" alt="JCL Production Logo" class="logo">
+            <nav>
+                <h3>
+                    <a href="index.html">HOME</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="recipes.html">RECIPES</a>
+                    <a href="aboutUs.html">ABOUT US</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="contact.html">CONTACT</a>
+                </h3>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Content -->
+    <main class="product-detail">
+        <div class="product-hero">
+            <div class="product-image" style="background-image: url('Img/ham pack.jpg');"></div>
+            <div class="product-info">
+                <h1>Slice Ham</h1>
+                <p class="product-price">₱50 per pack</p>
+                <p class="product-description">
+                    Our premium sliced ham is made from high-quality pork, carefully seasoned and perfectly sliced for your convenience. 
+                    Ideal for sandwiches, breakfast plates, or as an ingredient in various recipes. Each pack contains generous portions 
+                    of our signature ham, vacuum-sealed for freshness.
+                </p>
+                <div class="add-to-cart">
+                    <input type="number" class="quantity-selector" value="1" min="1">
+                    <button id="buyNowBtn" class="cta-button">Buy Now</button>
+                </div>
+                <a href="products.html" class="back-link">&larr; Back to Products</a>
+            </div>
+        </div>
+
+        <div class="nutritional-info">
+            <h2>Nutritional Information</h2>
+            <table>
+                <tr>
+                    <th>Nutrition Facts</th>
+                    <th>Per 100g</th>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>145 kcal</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>16g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>9g</td>
+                </tr>
+                <tr>
+                    <td>Saturated Fat</td>
+                    <td>3g</td>
+                </tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>1g</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td>1g</td>
+                </tr>
+                <tr>
+                    <td>Sodium</td>
+                    <td>850mg</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Recipe Suggestion Section -->
+        <section class="recipe-suggestion">
+            <h2>Try This Recipe!</h2>
+            <div class="recipe-content">
+                <img src="Img/ham-pasta.jpg" alt="Creamy Ham Pasta">
+                <div class="recipe-text">
+                    <h3>Creamy Ham Pasta</h3>
+                    <p>Transform our premium JCL Slice Ham into a restaurant-quality pasta dish with this simple yet impressive creamy pasta recipe. The perfect balance of savory ham, rich cream sauce, and al dente pasta makes this a family favorite that comes together in under 30 minutes.</p>
+                    <div class="meta">
+                        <span><i class="fas fa-clock"></i> 25 mins prep</span>
+                        <span><i class="fas fa-utensils"></i> 3-4 servings</span>
+                        <span><i class="fas fa-star"></i> Easy</span>
+                    </div>
+                    <a href="hamPasta.html" class="cta-button">Get Full Recipe</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Information</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Quantity:</label>
+                    <input type="number" id="orderQuantity" name="quantity" min="1" value="1">
+                </div>
+                
+                <div class="payment-methods">
+                    <h3>Payment Method</h3>
+                    <div class="payment-method">
+                        <input type="radio" id="cashOnDelivery" name="payment" value="Cash on Delivery" checked>
+                        <label for="cashOnDelivery">Cash on Delivery</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="creditCard" name="payment" value="Credit Card">
+                        <label for="creditCard">Credit Card</label>
+                    </div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="pickup" name="pickup">
+                    <label for="pickup">Pickup on Location</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+                
+                <div id="cardDetails" style="display:none;">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry">Expiry Date:</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                    </div>
+                </div>
+                
+                <button type="submit" class="cta-button" style="width:100%;">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content thank-you-modal">
+            <i class="fas fa-check-circle"></i>
+            <h2>Thank You for Your Order!</h2>
+            <p>We've received your order and will process it shortly.</p>
+            <p>An order confirmation has been sent to your email.</p>
+            <button id="closeThankYou" class="cta-button">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            
+            <!-- Products Column -->
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="product-ham.html">Slice Ham</a></li>
+                    <li><a href="product-pork-siomai.html">Pork Siomai</a></li>
+                    <li><a href="product-chicken-siomai.html">Chicken Siomai</a></li>
+                    <li><a href="product-shanghai.html">Shanghai Lumpia</a></li>
+                    <li><a href="product-longaniza.html">Longaniza</a></li>
+                    <li><a href="product-tocino.html">Tocino</a></li>
+                    <li><a href="products.html">View All Products</a></li>
+                </ul>
+            </div>
+            
+            <!-- Recipes Column -->
+            <div class="footer-column">
+                <h3>Popular Recipes</h3>
+                <ul>
+                    <li><a href="recipe-ham-sandwich.html">Ham Sandwich</a></li>
+                    <li><a href="hamAndCheese Omelette.html">Ham & Cheese Omelette</a></li>
+                    <li><a href="hamCheeseRolls.html">Ham Cheese Rolls</a></li>
+                    <li><a href="shomaiFriedRice.html">Siomai Fried Rice</a></li>
+                    <li><a href="shanghaiLumpiaPlatter.html">Shanghai Lumpia Platter</a></li>
+                    <li><a href="tocinoFriedRice.html">Tocino Fried Rice</a></li>
+                    <li><a href="recipes.html">All Recipes</a></li>
+                </ul>
+            </div>
+            
+            <!-- Information Column -->
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="shippingPolicy.html">Shipping Policy</a></li>
+                    <li><a href="returnPolicy.html">Return Policy</a></li>
+                    <li><a href="paymentOption.html">Payment Options</a></li>
+                    <li><a href="wholeSaleInquiries.html">Wholesale Inquiries</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Flat Contact Row -->
+        <div class="contact-row">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>12 Meat Processing St., Concepcion, Tarlac</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>(0951) 642-8442</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@jclproduction.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Sat 8AM-5PM</span>
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 JCL Production. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="buy.js"></script>
+</body>
+</html>

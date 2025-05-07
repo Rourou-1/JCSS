@@ -1,0 +1,154 @@
+        /* Additional styles for blog page */
+        li a[href] {
+    color: white !important;
+}
+.read-more {
+    color:white !important;
+}
+
+
+        .blog-khemsy {
+
+            background-color: #f8f1e9;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .blog-khemsy h1 {
+            font-size: 2.5rem;
+            color: #8b0000;
+            margin-bottom: 15px;
+        }
+        
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        
+        .blog-table tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .blog-table tr:last-child {
+            border-bottom: none;
+        }
+        
+        .blog-table td {
+            padding: 30px 15px;
+            vertical-align: top;
+        }
+        
+        .blog-table .post-image {
+            width: 30%;
+        }
+        
+        .blog-table .post-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .blog-table .post-content {
+            width: 70%;
+            padding-left: 30px;
+        }
+        
+        .post-category {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-table h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .post-meta span {
+            margin-right: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: #8b0000;
+            font-weight: bold;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .related-recipes {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        
+        .related-recipes h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .related-recipes ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .related-recipes li {
+            margin-bottom: 5px;
+        }
+        
+        .related-recipes a {
+            color: #8b0000;
+            text-decoration: none;
+        }
+        
+        .related-recipes a:hover {
+            text-decoration: underline;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .pagination a.active {
+            background-color: #8b0000;
+            color: white;
+            border-color: #8b0000;
+        }
+        
+        .pagination a:hover:not(.active) {
+            background-color: #f1f1f1;
+        }
